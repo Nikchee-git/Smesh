@@ -191,6 +191,25 @@ footer {
     .track-card {
         padding: 0.75rem;
     }
+
+    .gallery figure figcaption {
+        position: static;            /* ← ключевое: вынимаем из оверлея */
+        opacity: 1;                  /* всегда видима, без ховера */
+        background: transparent;     /* фон оверлея не нужен */
+        color: #333;                 /* тёмный текст на светлом фоне */
+        padding: 8px 4px 4px;
+        font-size: 0.85rem;          /* чуть мельче основного текста */
+        line-height: 1.35;           /* компактно, но читаемо */
+    }
+
+    /* Ховер-эффекты на телефоне бессмысленны — отключаем */
+    .gallery figure:hover img {
+        filter: brightness(1.1);
+    }
+    .gallery figure {
+        display: block;        /* ← ключевое */
+        width: 100%;
+    }
 }
 
 /* --- Планшеты и небольшие окна: ширина до 768px --- */
