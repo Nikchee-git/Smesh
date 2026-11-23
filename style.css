@@ -196,7 +196,8 @@ footer {
         position: static;            /* ← ключевое: вынимаем из оверлея */
         opacity: 1;                  /* всегда видима, без ховера */
         background: transparent;     /* фон оверлея не нужен */
-        color: #333;                 /* тёмный текст на светлом фоне */
+        background-color: #262626;
+        color: #F0F0F0;                 /* тёмный текст на светлом фоне */
         padding: 8px 4px 4px;
         font-size: 0.85rem;          /* чуть мельче основного текста */
         line-height: 1.35;           /* компактно, но читаемо */
@@ -209,6 +210,9 @@ footer {
     .gallery figure {
         display: block;        /* ← ключевое */
         width: 100%;
+    }
+    footer p{
+        font-size: 12px;
     }
 }
 
