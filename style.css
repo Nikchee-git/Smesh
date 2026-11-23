@@ -198,7 +198,9 @@ footer {
         background: transparent;     /* фон оверлея не нужен */
         background-color: #262626;
         color: #F0F0F0;                 /* тёмный текст на светлом фоне */
-        padding: 8px 4px 4px;
+        text-align: justify;
+        text-align-last: center;
+        padding: 8px 10px 10px;
         font-size: 0.85rem;          /* чуть мельче основного текста */
         line-height: 1.35;           /* компактно, но читаемо */
     }
