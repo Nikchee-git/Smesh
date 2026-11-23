@@ -168,7 +168,7 @@ footer {
 .track-cover {
     width: 90px;
     height: 90px;
-    flex: 0 0 44px;
+    flex: 0 0 90px;
     object-fit: cover;
     border-radius: 10px;
     background: #f4a460;
@@ -185,6 +185,34 @@ footer {
     display: block;
     width: 100%;
     margin: 0;
+}
+
+
+/* --- Планшеты и небольшие окна: ширина до 768px --- */
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 30px;        /* было 42px */
+        padding: 0 12px;
+    }
+
+    .navigation ul {
+        flex-wrap: wrap;        /* если пункты не влезают — переносятся на новую строку */
+        gap: 0.6rem 1.4rem;
+        padding: 0 12px;
+    }
+
+    .navigation a {
+        font-size: 17px;        /* было 20px */
+    }
+
+    main article p {
+        font-size: 1.1rem;      /* было 1.3rem */
+    }
+
+    video {
+        width: 90%;             /* было 75% — на планшете лучше чуть шире */
+    }
 }
 
 @media (max-width: 480px) {
@@ -218,55 +246,10 @@ footer {
     }
 }
 
-/* --- Планшеты и небольшие окна: ширина до 768px --- */
-@media (max-width: 768px) {
-
-    .header h1 {
-        font-size: 30px;        /* было 42px */
-        padding: 0 12px;
-    }
-
-    .navigation ul {
-        flex-wrap: wrap;        /* если пункты не влезают — переносятся на новую строку */
-        gap: 0.6rem 1.4rem;
-        padding: 0 12px;
-    }
-
-    .navigation a {
-        font-size: 17px;        /* было 20px */
-    }
-
-    main article p {
-        font-size: 1.1rem;      /* было 1.3rem */
-    }
-
-    video {
-        width: 90%;             /* было 75% — на планшете лучше чуть шире */
-    }
-}
-
 @media (max-width: 354px) {
 
     .header h1 {
         font-size: 26px;        /* было 42px */
         padding: 0 12px;
-    }
-
-    .navigation ul {
-        flex-wrap: wrap;        /* если пункты не влезают — переносятся на новую строку */
-        gap: 0.6rem 1.4rem;
-        padding: 0 12px;
-    }
-
-    .navigation a {
-        font-size: 17px;        /* было 20px */
-    }
-
-    main article p {
-        font-size: 1.1rem;      /* было 1.3rem */
-    }
-
-    video {
-        width: 90%;             /* было 75% — на планшете лучше чуть шире */
     }
 }
