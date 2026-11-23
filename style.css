@@ -192,3 +192,31 @@ footer {
     }
 }
 
+/* --- Планшеты и небольшие окна: ширина до 768px --- */
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 30px;        /* было 42px */
+        padding: 0 12px;
+    }
+
+    .navigation ul {
+        flex-wrap: wrap;        /* если пункты не влезают — переносятся на новую строку */
+        gap: 0.6rem 1.4rem;
+        padding: 0 12px;
+    }
+
+    .navigation a {
+        font-size: 17px;        /* было 20px */
+    }
+
+    main article p {
+        font-size: 1.1rem;      /* было 1.3rem */
+        padding: 0 16px;
+    }
+
+    video {
+        width: 90%;             /* было 75% — на планшете лучше чуть шире */
+    }
+}
+
